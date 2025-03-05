@@ -44,6 +44,9 @@ dependencies {
 
     // 手动添加以下依赖（覆盖自动生成的版本）
     implementation("androidx.core:core-ktx:1.12.0")  // 解决Bundle错误
+    implementation("com.google.android.material:material:1.9.0")
+    implementation("androidx.appcompat:appcompat:1.6.1")
+    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     implementation("com.github.PhilJay:MPAndroidChart:v3.1.0") // 图表库
     implementation("org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.2.5") // MQTT核心
     implementation("org.eclipse.paho:org.eclipse.paho.android.service:1.1.1") // MQTT安卓服务
