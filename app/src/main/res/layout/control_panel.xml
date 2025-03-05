@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 错误1：根元素必须声明 android 命名空间 -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/sea_blue">
+
+    <!-- 方向控制 -->
+    <!-- 错误2：RelativeLayout 缺少 layout_width -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+        <!-- 错误3：ImageButton 缺少 layout_width/layout_height -->
+        <ImageButton
+            android:id="@+id/btnForward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_up" />
+
+        <!-- 其他方向按钮需补充类似修复 -->
+    </RelativeLayout>
+
+    <!-- 速度调节 -->
+    <SeekBar
+        android:id="@+id/speedControl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="50" />
+
+    <!-- 紧急停止 -->
+    <!-- 错误4：Button 缺少 layout_width/layout_height -->
+    <Button
+        android:id="@+id/btnEmergencyStop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/alert_red"
+        android:text="紧急停止" />
+
+</LinearLayout>
