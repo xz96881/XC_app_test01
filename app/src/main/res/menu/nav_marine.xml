@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_control"
+        android:title="控制台"
+        android:icon="@drawable/ic_control"/>
+
+    <item
+        android:id="@+id/nav_monitor"
+        android:title="监测"
+        android:icon="@drawable/ic_monitor"/>
+
+    <item
+        android:id="@+id/nav_map"
+        android:title="地图"
+        android:icon="@drawable/ic_map"/>
+</menu>
